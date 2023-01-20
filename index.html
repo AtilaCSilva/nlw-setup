@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Nlw: Setup</title>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/logo.svg" alt="Logomarca do aplicativo Habits" />
+      <button>
+        <img src="./assets/plus.svg" alt="Ícone, sinal de mais roxo" />
+        <span> Registrar o meu dia </span>
+      </button>
+    </header>
+
+    <form id="form-habits">
+      <div class="habits">
+        <div class="habit" data-name="run">
+          <img src="./assets/run.svg" alt="runner icon" />
+        </div>
+        <div class="habit" data-name="water">
+          <img src="./assets/water.svg" alt="water icon" />
+        </div>
+        <div class="habit" data-name="muscle">
+          <img src="./assets/muscle.svg" alt="strong arm icon" />
+        </div>
+        <div class="habit" data-name="sleeping">
+          <img src="./assets/sleep.svg" alt="sleeping icon" />
+        </div>
+        <div class="habit" data-name="salad">
+          <img src="./assets/salad.svg" alt="salad icon" />
+        </div>
+      </div>
+
+      <div class="days"></div>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
