@@ -7,15 +7,17 @@
 
 body {
   height: 100vh;
-  background-color: black;
+  background-image: url(./images/bg-agenda.jpg);
+  background-position: center;
+  background-size: cover;
   color: white;
 }
 
 button {
   padding: 16px 24px;
   border-radius: 8px;
-  background-color: transparent;
-  border-color: #8b5cf6;
+  background-color: rgba(0, 0, 0, 0.497);
+  border-color: #04eb1c;
   color: white;
 
   font-family: 'Inter', sans-serif;
@@ -25,6 +27,15 @@ button {
   display: flex;
   align-items: center;
   gap: 12px;
+  transition: ease-in 0.5s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  border-color: white;
+  transition-property: transform, border-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
 }
 
 header {
@@ -33,7 +44,7 @@ header {
   align-items: center;
 
   padding: 48px;
-  background-color: black;
+  background-color: transparent;
   position: fixed;
 
   width: 100vw;
@@ -45,15 +56,20 @@ input {
 
   width: 64px;
   height: 64px;
-  background-color: #18181b;
+  background-color: transparent;
 
-  border: 2px solid #27272a;
+  border: 2px solid #04eb1c;
   border-radius: 8px;
+  transition: ease-in-out 0.5s;
+}
+
+input:hover {
+  transform: scale(0.7);
 }
 
 input:checked {
-  background: #8b5cf6;
-  border: 2px solid #a78bfa;
+  background: #04eb1c;
+  border: 2px solid #92c898;
 }
 
 #form-habits {
@@ -90,18 +106,6 @@ input:checked {
   display: flex;
   flex-direction: column;
   gap: 24px;
-}
-
-.day span {
-  margin-bottom: 8px;
-
-  font-family: 'Roboto Mono';
-
-  font-size: 20px;
-  line-height: 125%;
-
-  color: #a1a1aa;
-  text-align: center;
 }
 
 @media (max-width: 570px) {
